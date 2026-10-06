@@ -1,10 +1,10 @@
-import { Camera, Code2, Globe2, Send } from "lucide-react";
+import { ArrowUpRight, Camera, Code2, Globe2, Send } from "lucide-react";
 
 const footerLinks = [
   { label: "Home", href: "#home" },
   { label: "About", href: "#about" },
   { label: "Services", href: "#services" },
-  { label: "Experience", href: "#experience" },
+  { label: "Our approach", href: "#experience" },
   { label: "Projects", href: "#projects" },
   { label: "Insights", href: "#insights" },
   { label: "Contact", href: "#contact" },
@@ -19,25 +19,27 @@ const socialLinks = [
 
 export function Footer() {
   return (
-    <footer className="border-t border-[var(--border)] bg-[rgba(255,255,255,0.28)] py-10">
-      <div className="section-shell grid gap-10 lg:grid-cols-[1.2fr_0.8fr_0.8fr]">
+    <footer className="border-t border-white/10 bg-[#081735] py-12 text-white sm:py-14">
+      <div className="section-shell grid gap-10 md:grid-cols-[1.15fr_0.85fr] lg:grid-cols-[1.2fr_0.8fr_0.8fr] lg:gap-14">
         <div>
-          <div className="flex flex-col leading-none tracking-[0.18em] text-[var(--foreground)]">
-            <span className="text-[0.82rem] font-semibold">ARUN KUMAR BHARDWAJ</span>
-            <span className="text-[0.64rem] text-[var(--muted)] tracking-[0.22em]">FOUNDER & TECHNOLOGY ENTREPRENEUR</span>
-            <span className="mt-2 text-[0.74rem] tracking-[0.24em] text-[var(--muted)]">ORBANTIS TECHNOLOGIES</span>
+          <div className="flex flex-col leading-none tracking-[0.18em] text-white">
+            <span className="text-[0.82rem] font-semibold">ORBANTIS TECHNOLOGIES</span>
+            <span className="mt-2 text-[0.64rem] tracking-[0.22em] text-white/55">DIGITAL PRODUCTS & TECHNOLOGY</span>
           </div>
-          <p className="mt-5 max-w-sm text-base leading-7 text-[var(--muted)]">
-            Designing and building digital products that connect strategy, technology and meaningful business growth.
+          <p className="mt-5 max-w-sm text-sm leading-6 text-white/60 sm:text-base sm:leading-7">
+            We design and build digital products that connect strategy, technology, and meaningful business growth.
           </p>
+          <a href="mailto:support@orbantistechnologies.com" className="mt-5 inline-flex items-center gap-2 text-sm font-medium text-white transition hover:text-[var(--accent)]">
+            Start a conversation <ArrowUpRight size={15} />
+          </a>
         </div>
 
         <div>
-          <div className="text-[0.68rem] font-medium uppercase tracking-[0.2em] text-[var(--muted)]">Links</div>
-          <ul className="mt-4 space-y-3">
+          <div className="text-[0.66rem] font-medium uppercase tracking-[0.22em] text-white/45">Explore</div>
+          <ul className="mt-4 grid grid-cols-2 gap-x-6 gap-y-2">
             {footerLinks.map((link) => (
               <li key={link.label}>
-                <a href={link.href} className="text-sm text-[var(--foreground)] transition hover:text-[var(--accent-strong)]">
+                <a href={link.href} className="inline-flex min-h-8 items-center text-sm text-white/75 transition hover:text-[var(--accent)]">
                   {link.label}
                 </a>
               </li>
@@ -46,8 +48,9 @@ export function Footer() {
         </div>
 
         <div>
-          <div className="text-[0.68rem] font-medium uppercase tracking-[0.2em] text-[var(--muted)]">Social</div>
-          <div className="mt-4 flex gap-3">
+          <div className="text-[0.66rem] font-medium uppercase tracking-[0.22em] text-white/45">Connect</div>
+          <p className="mt-4 max-w-xs text-sm leading-6 text-white/60">Follow the work and ideas behind Orbantis Technologies.</p>
+          <div className="mt-4 flex gap-2.5">
             {socialLinks.map(({ label, href, icon: Icon }) => (
               <a
                 key={label}
@@ -55,7 +58,7 @@ export function Footer() {
                 target="_blank"
                 rel="noreferrer"
                 aria-label={label}
-                className="flex h-10 w-10 items-center justify-center rounded-full border border-[var(--border)] bg-[rgba(255,255,255,0.22)] text-[var(--foreground)] transition hover:border-[var(--foreground)] hover:bg-[var(--foreground)] hover:text-[var(--paper)]"
+                className="flex h-10 w-10 items-center justify-center border border-white/20 text-white/75 transition hover:border-[var(--accent)] hover:bg-[var(--accent)] hover:text-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--accent)]"
               >
                 <Icon size={16} />
               </a>
@@ -64,8 +67,9 @@ export function Footer() {
         </div>
       </div>
 
-      <div className="section-shell mt-8 border-t border-[var(--border)] px-0 pt-6 text-center text-sm text-[var(--muted)]">
-        © 2026 Orbantis Technologies. All rights reserved.
+      <div className="section-shell mt-10 flex flex-col gap-2 border-t border-white/12 px-0 pt-5 text-xs text-white/45 sm:flex-row sm:items-center sm:justify-between">
+        <span>© 2026 Orbantis Technologies. All rights reserved.</span>
+        <a href="#home" className="transition hover:text-white">Back to top ↑</a>
       </div>
     </footer>
   );

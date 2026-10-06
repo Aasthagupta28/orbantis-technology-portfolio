@@ -70,13 +70,13 @@ export function Navbar() {
           </div>
 
             <nav className="mx-auto flex max-w-7xl items-center justify-between py-3.5" aria-label="Main navigation">
-            <Link href="#home" className="flex items-center gap-3" aria-label="Arun Kumar home">
+            <Link href="#home" className="flex items-center gap-3" aria-label="Orbantis Technologies home">
               <div className="relative h-10 w-10 overflow-hidden rounded-full border border-[var(--border)] bg-white/80 p-1">
                 <Image src="/logo2.png" alt="Orbantis logo" fill className="object-contain" sizes="40px" />
               </div>
               <div className="leading-none">
-                  <div className="whitespace-nowrap text-[0.78rem] font-semibold tracking-[0.12em] text-[var(--foreground)]">ARUN KUMAR</div>
-                  <div className="mt-1 whitespace-nowrap text-[0.52rem] uppercase tracking-[0.14em] text-[var(--muted)]">Founder · Orbantis</div>
+                  <div className="whitespace-nowrap text-[0.78rem] font-semibold tracking-[0.12em] text-[var(--foreground)]">ORBANTIS TECHNOLOGIES</div>
+                  <div className="mt-1 whitespace-nowrap text-[0.52rem] uppercase tracking-[0.14em] text-[var(--muted)]">Digital Products · Technology</div>
               </div>
             </Link>
 

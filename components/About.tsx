@@ -6,8 +6,8 @@ import Image from "next/image";
 const stats = [
   { value: "3+", label: "Web products" },
   { value: "10+", label: "Core stacks" },
-  { value: "100%", label: "Owner-led" },
-  { value: "24/7", label: "Execution mindset" },
+  { value: "Full-cycle", label: "Product delivery" },
+  { value: "Business-first", label: "Technology strategy" },
 ];
 
 export function About() {
@@ -42,17 +42,17 @@ export function About() {
         >
           <div className="eyebrow mb-5">About us</div>
           <h2 className="max-w-xl text-3xl font-semibold leading-[1.04] tracking-[-0.06em] text-[var(--foreground)] sm:text-4xl lg:text-5xl">
-            Founder-led technology strategy, execution, and digital product thinking.
+            Digital products and technology built around your business.
           </h2>
 
           <p className="mt-6 max-w-xl text-base leading-8 text-[var(--muted)]">
-            Arun Kumar Bhardwaj is the founder and driving force behind Orbantis Technologies — a technology venture focused on building modern digital solutions, product systems, and strategic business experiences.
+            Orbantis Technologies partners with ambitious businesses to shape ideas into modern digital solutions, product systems, and strategic business experiences.
           </p>
 
           <div className="mt-7 rounded-[2rem] border border-[var(--border)] bg-[rgba(255,255,255,0.3)] p-6">
-            <div className="text-xs font-medium uppercase tracking-[0.2em] text-[var(--muted)]">Orbantis Technologies</div>
+            <div className="text-xs font-medium uppercase tracking-[0.2em] text-[var(--muted)]">What we do</div>
             <p className="mt-3 max-w-xl text-base leading-8 text-[var(--foreground)]/90">
-              The company is led by Arun Kumar, and the work is built around helping ambitious businesses move from idea to product, from concept to execution, and from digital complexity to practical growth.
+              From product strategy and design to software engineering, we help businesses move from idea to launch and from digital complexity to practical growth.
             </p>
           </div>
 

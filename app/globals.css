@@ -129,8 +129,7 @@ section {
 #about,
 #experience,
 #technologies,
-#insights,
-#contact {
+#insights {
   background-color: var(--paper);
 }
 

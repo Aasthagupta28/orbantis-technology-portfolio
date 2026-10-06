@@ -94,7 +94,7 @@ export function ParticleShowcase() {
           transition={{ duration: 0.75, ease: [0.22, 1, 0.36, 1] }}
           className="max-w-3xl px-4"
         >
-          <div className="text-xs font-medium uppercase tracking-[0.2em] text-white/65">Orbantis Technologies · Founder-led by Arun</div>
+          <div className="text-xs font-medium uppercase tracking-[0.2em] text-white/65">Orbantis Technologies · Digital innovation</div>
           <h2 className="mt-6 text-4xl font-medium leading-[1.08] sm:text-5xl lg:text-6xl">
             Make your next move
             <span className="block text-white/65">mean something.</span>

@@ -15,23 +15,22 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL("https://orbantistechnologies.com"),
   title: {
-    default: "Arun Kumar Bhardwaj | Founder, Orbantis Technologies",
-    template: "%s | Arun Kumar Bhardwaj",
+    default: "Orbantis Technologies | Digital Products & Technology",
+    template: "%s | Orbantis Technologies",
   },
   description:
-    "Arun Kumar Bhardwaj is the founder and technology entrepreneur behind Orbantis Technologies, building digital products, strategy-led systems and transformation experiences for ambitious businesses.",
+    "Orbantis Technologies designs and builds digital products, strategy-led systems, and transformation experiences for ambitious businesses.",
   keywords: [
-    "Arun Kumar Bhardwaj",
     "Orbantis Technologies",
-    "technology entrepreneur",
-    "founder portfolio",
+    "digital products",
+    "technology solutions",
     "digital product strategist",
     "web development",
   ],
   openGraph: {
-    title: "Arun Kumar Bhardwaj | Founder, Orbantis Technologies",
+    title: "Orbantis Technologies | Digital Products & Technology",
     description:
-      "Founder-led portfolio of Arun Kumar Bhardwaj, building digital innovation through Orbantis Technologies.",
+      "Orbantis Technologies builds digital products and technology solutions that help ambitious businesses move forward.",
     url: "https://orbantistechnologies.com",
     siteName: "Orbantis Technologies",
     locale: "en_US",
